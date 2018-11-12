@@ -8,6 +8,6 @@ RUN npm install
 RUN npm install webpack
 # Build the app
 RUN npm run build
-ENV PORT=1234
-EXPOSE 1234
+ENV PORT=2999
+EXPOSE 2999
 CMD [ "node", "/home/client/server.js" ]
