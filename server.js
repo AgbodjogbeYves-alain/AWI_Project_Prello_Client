@@ -15,7 +15,6 @@ if (process.env.NODE_ENV == 'production') {
         console.log('listening on port ' + port);
     });
 } else {
-    console.log(process.env.NODE_ENV)
     new WebpackDevServer(webpack(config), {
         contentBase: './public',
         publicPath: config.output.publicPath,
@@ -31,6 +30,8 @@ if (process.env.NODE_ENV == 'production') {
         if (err) {
             console.log(err);
         }
+        console.log(process.env.NODE_ENV)
+
         console.log('Listening at localhost:3000');
     });
 }
