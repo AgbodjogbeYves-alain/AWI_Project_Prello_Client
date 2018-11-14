@@ -76,7 +76,7 @@ class LogIn extends Component {
                                         <div className="btn-wrapper text-center">
                                             <a href="#" className="btn btn-neutral btn-icon">
                                                 <span className="btn-inner--icon">
-                                                    <img src="https://rawcdn.githack.com/AgbodjogbeYves-alain/AWI_Assets/7cf53ef40e7e2346c164640109b845b599cbe915/img/icons/common/google.svg"/>
+                                                    <img src="https://rawcdn.githack.com/AgbodjogbeYves-alain/AWI_Project_Prello_Client/5bdf2dfa4c5cd11f8ae013230c30bbc03299a739/public/assets/img/icons/common/google.svg"/>
                                                 </span>
                                                 <span className="btn-inner--text">Google</span>
                                             </a>
