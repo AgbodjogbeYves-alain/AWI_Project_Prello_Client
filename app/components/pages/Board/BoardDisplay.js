@@ -190,10 +190,7 @@ class BoardDisplay extends Component {
     render() {
 
         return this.state.board && this.state.board != 'unknow' ? (
-            <div
-                id={"boardDisplay"}
-                style={{backgroundImage: "url('https://res.cloudinary.com/dxdyg7b5b/image/upload/v1541680009/backgrounds/"+ this.state.board.boardBackground +".jpg')"}}
-            >
+            <div>
                 <NavBar/>
                 <NavBarBoard board={this.state.board}/>
                 <button className="btn btn-success myAddListButton" onClick={this.createList}>Create a new List</button>
