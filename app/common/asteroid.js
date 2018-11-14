@@ -9,7 +9,7 @@ import { setRefreshed } from '../actions/RefreshActions';
 const Asteroid = createClass();
 // Connect to a Meteor backend
 const asteroid = new Asteroid({
-  endpoint: 'ws://prello12s.igpolytech.fr/websocket',
+  endpoint: 'ws://localhost:9000/websocket',
 });
 
 // if you want realitme updates in all connected clients
@@ -24,8 +24,12 @@ asteroid.ddp.on('added', (doc) => {
   // we need proper document object format here
   if (doc.collection === 'users') {
     const docObj = Object.assign({}, doc.fields, { _id: doc.id });
-    if(docObj.emails) store.dispatch(setLoggedUser(docObj));
-    else store.dispatch(addUser(docObj));
+    if(docObj.services) store.dispatch(setLoggedUser(docObj));
+    else {
+      
+      store.dispatch(addUser(docObj));
+    }
+    
   }
   if(doc.collection === 'boards'){
     const docObj = Object.assign({}, doc.fields, { _id: doc.id });

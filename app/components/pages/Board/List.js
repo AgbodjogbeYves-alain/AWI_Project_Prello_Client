@@ -63,11 +63,9 @@ export class List extends React.Component {
         event.preventDefault()
 
         let idBoard = this.props.board._id
-
         let idList = this.props.list._id
         callCreateCard(idBoard,idList)
     }
-
 
     render() {
         return (
@@ -87,8 +85,8 @@ export class List extends React.Component {
                                     </button>
                                     <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                         <a className="dropdown-item">Copy list</a>
-                                        <a className="dropdown-item" href="#">Move list</a>
-                                        <a className="dropdown-item" href="#">Archive all cards</a>
+                                        <a className="dropdown-item" data-toggle="modal" data-target={"#"+"confirmArchiveCardsmodal"+this.props.list._id}>Archive all cards</a>
+                                        <a className="dropdown-item">Move list</a>
                                         <a className="dropdown-item" data-toggle="modal" data-target={"#"+"confirmArchivemodal"+this.props.list._id}>Archive list</a>
                                     </div>
                                 </div>

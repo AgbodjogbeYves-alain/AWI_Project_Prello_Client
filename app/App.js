@@ -5,7 +5,6 @@ import { Provider } from 'react-redux';
 import MyRouter from './components/routes';
 import store from './components/store';
 
-
 ReactDOM.render(
   <Provider store={store}>
     <MyRouter />

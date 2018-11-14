@@ -39,7 +39,6 @@ class BoardDisplay extends Component {
 
 
     componentWillReceiveProps(nextProps){
-        console.log("test")
         let id = nextProps.match.params.id
         let board = nextProps.boards.filter((board) => board._id === id)[0]
         if(board !== undefined){
@@ -94,7 +93,7 @@ class BoardDisplay extends Component {
 
             if(start === finish){
                 ///////////////////////////////////////////////
-                const newCardsList = Array.from(start.listCard);
+                const newCardsList = Array.from(start.listCards);
 
                 const cardToMove = newCardsList.filter((card) => card._id == draggableId)[0];
                 newCardsList.splice(source.index, 1);
@@ -102,7 +101,7 @@ class BoardDisplay extends Component {
 
                 const newStart = {
                     ...start,
-                    listCard: newCardsList
+                    listCards: newCardsList
                 };
 
                 ///////////////////////////////////////////////
@@ -129,23 +128,23 @@ class BoardDisplay extends Component {
             }else {
 
                 //Move from a list to another
-                const startCards = Array.from(start.listCard)
+                const startCards = Array.from(start.listCards)
                 const cardToMove = startCards.filter((card) => card._id == draggableId)[0];
 
                 startCards.splice(source.index, 1);
 
                 const newStart = {
                     ...start,
-                    listCard: startCards,
+                    listCards: startCards,
 
                 }
 
-                const finishedCards = Array.from(finish.listCard)
+                const finishedCards = Array.from(finish.listCards)
                 finishedCards.splice(destination.index, 0, cardToMove);
 
                 const newFinish = {
                     ...finish,
-                    listCard: finishedCards
+                    listCards: finishedCards
                 };
 
                 ///////////////////////////////////////////////
@@ -188,11 +187,11 @@ class BoardDisplay extends Component {
     };
 
     render() {
-
+        let imageUrl = this.state.board && this.state.board != 'unknow' ? "https://res.cloudinary.com/dxdyg7b5b/image/upload/"+ this.state.board.boardBackground +".png" : "";
         return this.state.board && this.state.board != 'unknow' ? (
             <div
                 id={"boardDisplay"}
-                style={{backgroundImage: "url('https://res.cloudinary.com/dxdyg7b5b/image/upload/v1541680009/backgrounds/"+ this.state.board.boardBackground +".jpg')"}}
+                style={{backgroundImage: "url('"+ imageUrl +"')"}}
             >
                 <NavBar/>
                 <NavBarBoard board={this.state.board}/>

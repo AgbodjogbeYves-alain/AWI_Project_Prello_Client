@@ -20,12 +20,13 @@ class Board extends Component {
     }
     render(){
         let board = this.props.board;
+        let imageUrl = "https://res.cloudinary.com/dxdyg7b5b/image/upload/c_thumb,w_300/"+ board.boardBackground +".png"
         return(
             <div to={"/board/"+ board._id} className="col-3 board-card">
-                <Link
-                    to={"/board/"+ board._id}
+                <Link 
+                    to={"/board/"+ board._id} 
                     className="card card-stats mb-4 mb-lg-0"
-                    style={{backgroundImage: "url('https://res.cloudinary.com/dxdyg7b5b/image/upload/c_thumb,w_300/v1541680009/backgrounds/"+ board.boardBackground +".jpg')"}}
+                    style={{backgroundImage: "url('"+ imageUrl +"')"}}
                 >
                     <div className="card-body">
                         <h6>{board.boardTitle}</h6>
@@ -34,7 +35,7 @@ class Board extends Component {
                                 <i class="ni ni-settings-gear-65 ni-lg"></i>
                             </div>
                             <div class="dropdown-menu">
-                                <div class="dropdown-item"
+                                <div class="dropdown-item" 
                                     data-toggle="modal"
                                     data-target={"#board-modal" + board._id}
                                     onClick={(e) => e.preventDefault()}

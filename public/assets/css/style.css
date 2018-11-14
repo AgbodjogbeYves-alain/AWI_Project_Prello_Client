@@ -3,6 +3,7 @@
 @import 'home.css';
 @import 'board.css';
 @import 'loading-page.css';
+@import 'checklist.css';
 
 .dropdown-item{
     cursor: pointer;
@@ -193,11 +194,6 @@ nav {
     margin-left: 40%;
 }
 
-html{
-    overflow-y: hidden;
-}
-
-
 .cardactiondiv{
     float: right;
 }
@@ -208,7 +204,6 @@ html{
 
 .cardButtonEdit{
     width: 100%;
-    height: 10%;
 }
 
 .modalCard  .modal-dialog {
@@ -217,7 +212,8 @@ html{
 
 .formCardModal{
     float:left;
-    width: 50%;
+    width: 70%;
+    margin-left: 10px;
 }
 
 .modalContentCard{
@@ -285,4 +281,7 @@ li{
 .card-profile-image:hover {
     margin-top: -100px;
     transition: 0.2s
+}
+.progress.card-progress{
+    margin-top: 10px;
 }

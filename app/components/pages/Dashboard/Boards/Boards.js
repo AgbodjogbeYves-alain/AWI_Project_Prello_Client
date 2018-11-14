@@ -24,7 +24,7 @@ class Boards extends Component {
                         <input className="custom-control-input" id="followed-boards" type="checkbox"/>
                         <label className="custom-control-label" htmlFor="followed-boards">Followed boards</label>
                     </div>
-                    <button
+                    <button 
                         className="btn btn-primary btn-sm"
                         data-toggle="modal"
                         data-target="#import-modal"
