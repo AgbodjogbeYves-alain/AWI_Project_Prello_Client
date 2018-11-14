@@ -56,7 +56,7 @@ module.exports = {
   },
   resolve: {
     root: path.join(__dirname, '..', 'app'),
-    extensions: ['', '.js', '.jsx', '.json', '.css', '.styl', '.png', '.jpg', '.jpeg', '.gif']
+    extensions: ['', '.js', '.jsx', '.json', '.css', '.png', '.jpg', '.jpeg', '.gif']
   },
   stylus: function () {
     return [sGrid, rupture]
