@@ -10,7 +10,7 @@ class SignUp extends Component {
 
     constructor(props) {
         super(props);
-     
+
         this.state = {
             alerts: []
         };
@@ -84,7 +84,7 @@ class SignUp extends Component {
                             <div className="text-center">
                             <a href="#" className="btn btn-neutral btn-icon">
                                 <span className="btn-inner--icon">
-                                    <img src="../assets/img/icons/common/google.svg"/>
+                                    <img src="https://rawcdn.githack.com/AgbodjogbeYves-alain/AWI_Assets/7cf53ef40e7e2346c164640109b845b599cbe915/img/icons/common/google.svg"/>
                                 </span>
                                 <span className="btn-inner--text">Google</span>
                             </a>
@@ -151,7 +151,7 @@ class SignUp extends Component {
                                 </div>
                             </form>
                         </div>
-                        
+
                         </div>
                         <div className="row mt-3">
                             <div className="col-12 text-right">
@@ -160,7 +160,7 @@ class SignUp extends Component {
                                 </Link>
                             </div>
                         </div>
-                        
+
                     </div>
                     </div>
                 </div>
