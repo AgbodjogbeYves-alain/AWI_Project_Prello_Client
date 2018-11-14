@@ -14,7 +14,7 @@ var cssExtractPlugin = new ExtractTextPlugin('styles.css');
 
 config.devtool = '';
 config.output.pathinfo = false;
-config.output.publicPath = 'http://prello12c.igpolytech.fr:3000/';
+config.output.publicPath = 'http://prello12c.igpolytech.fr/';
 config.entry = ['./app/App.js'];
 config.plugins.unshift(productionPlugin);
 config.plugins.push(cssExtractPlugin);
