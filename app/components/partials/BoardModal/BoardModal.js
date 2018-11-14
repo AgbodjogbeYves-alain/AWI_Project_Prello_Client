@@ -31,6 +31,7 @@ class BoardModal extends Component {
             boardDescription: board ? board.boardDescription : '',
             boardUsers: boardUsers,
             boardTeams: boardTeams,
+            boardBackground: board ? board.boardBackground : "walnut",
             alerts: []
         };
 
@@ -57,6 +58,7 @@ class BoardModal extends Component {
             boardDescription: '',
             boardUsers: [{userId: this.props.user._id, userRole: "admin"}],
             boardTeams: [],
+            boardBackground: "walnut"
         });
     }
 
@@ -66,6 +68,7 @@ class BoardModal extends Component {
             boardDescription: this.state.boardDescription,
             boardUsers: this.state.boardUsers,
             boardTeams: this.state.boardTeams,
+            boardBackground: this.state.boardBackground,
             boardPrivacy: 1
         };
 
@@ -85,6 +88,7 @@ class BoardModal extends Component {
         board.boardDescription = this.state.boardDescription;
         board.boardUsers = this.state.boardUsers;
         board.boardTeams = this.state.boardTeams;
+        board.boardBackground = this.state.boardBackground
 
         asteroid.call("boards.editBoard", board)
         .then((result) => {
@@ -117,6 +121,23 @@ class BoardModal extends Component {
             this.setState({boardUsers: newBoardUsers});
         }
 
+    }
+
+    renderBackgrounds(){
+        let backgrounds = ["walnut", "avenue", "pier", "tree", "boat", "heart", "hong-kong", "new-york-city", "sea", "vw-camper", "blue-watercolor", "blur-clean"];
+        return backgrounds.map((b) =>
+            <div className="col-6">
+                <img
+                    className={"thumbnail" + (this.state.boardBackground === b ? " active" : "")}
+                    src={"https://res.cloudinary.com/dxdyg7b5b/image/upload/c_thumb,h_100,w_130/v1541680096/backgrounds/"+ b +".jpg"}
+                    onClick={() => this.handleChangeBackground(b)}
+                />
+            </div>
+        );
+    }
+
+    handleChangeBackground(background){
+        this.setState({boardBackground: background})
     }
 
     render(){
@@ -179,6 +200,12 @@ class BoardModal extends Component {
                                             onChange={(field, value) => this.handleOnChangeTeams(field, value)}
                                         />
                                     </form>
+                                </div>
+                                <div className="col-4">
+                                    <h2>Arrière Plan</h2>
+                                    <div className="row backgrounds">
+                                        {this.renderBackgrounds()}
+                                    </div>
                                 </div>
                             </div>
 
