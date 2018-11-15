@@ -9,7 +9,7 @@ import { setRefreshed } from '../actions/RefreshActions';
 const Asteroid = createClass();
 // Connect to a Meteor backend
 const asteroid = new Asteroid({
-  endpoint: 'ws://http://prello12s.igpolytech.fr/websocket',
+  endpoint: 'ws://prello12s.igpolytech.fr/websocket',
 });
 
 // if you want realitme updates in all connected clients
