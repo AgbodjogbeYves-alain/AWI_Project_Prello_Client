@@ -20,31 +20,30 @@ class Board extends Component {
     }
     render(){
         let board = this.props.board;
-        let imageUrl = "https://res.cloudinary.com/dxdyg7b5b/image/upload/c_thumb,w_300/"+ board.boardBackground +".png"
         return(
             <div to={"/board/"+ board._id} className="col-3 board-card">
                 <Link 
                     to={"/board/"+ board._id} 
                     className="card card-stats mb-4 mb-lg-0"
-                    style={{backgroundImage: "url('"+ imageUrl +"')"}}
+                    style={{backgroundImage: "url('https://res.cloudinary.com/dxdyg7b5b/image/upload/c_thumb,w_300/v1541680009/backgrounds/"+ board.boardBackground +".jpg')"}}
                 >
                     <div className="card-body">
                         <h6>{board.boardTitle}</h6>
-                        <div class="dropdown float-right d-none">
-                            <div class="btn-link btn-sm" data-toggle="dropdown" href="#" role="button" onClick={(e) => e.preventDefault()}>
-                                <i class="ni ni-settings-gear-65 ni-lg"></i>
+                        <div className="dropdown float-right d-none">
+                            <div className="btn-link btn-sm" data-toggle="dropdown" href="#" role="button" onClick={(e) => e.preventDefault()}>
+                                <i className="ni ni-settings-gear-65 ni-lg"></i>
                             </div>
-                            <div class="dropdown-menu">
-                                <div class="dropdown-item" 
+                            <div className="dropdown-menu">
+                                <div className="dropdown-item" 
                                     data-toggle="modal"
                                     data-target={"#board-modal" + board._id}
                                     onClick={(e) => e.preventDefault()}
                                 >
-                                    <i class="ni ni-settings"></i>
+                                    <i className="ni ni-settings"></i>
                                     Edit
                                 </div>
-                                <div class="dropdown-item" onClick={(e) => this.handleRemoveBoard(e)}>
-                                    <i class="ni ni-fat-remove"></i>
+                                <div className="dropdown-item" onClick={(e) => this.handleRemoveBoard(e)}>
+                                    <i className="ni ni-fat-remove"></i>
                                     Remove
                                 </div>
                             </div>
