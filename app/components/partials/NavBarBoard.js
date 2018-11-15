@@ -17,7 +17,6 @@ class NavBarBoard extends Component {
 
         this.handleSubmitTitle = this.handleSubmitTitle.bind(this)
         this.handleBNChange = this.handleBNChange.bind(this)
-        this.toggleMenu = this.toggleMenu.bind(this)
     }
 
     componentWillReceiveProps(nextProps) {
@@ -42,11 +41,6 @@ class NavBarBoard extends Component {
                 board: 'unknow',
             })
         }
-    }
-
-    toggleMenu = () =>{
-        const { visibleMenu } = this.state
-        this.setState({visibleMenu: !visibleMenu})
     }
 
 
@@ -109,11 +103,7 @@ class NavBarBoard extends Component {
                     {this.renderProfilePictures()}
                 </div>
 
-                <button className={"btn btn-primary"} id={'toggleButton'} onClick={() => this.toggleMenu(true)}>
-                    <span> <i className="ni ni-settings"/>Display settings</span>
-                </button>
             </nav>
-                {this.state.visibleMenu && <Menu idBoard={this.state.board._id}/>}
                 <div className="modal fade" id="modalChangeBN" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered" role="document">
                         <div className="modal-content">

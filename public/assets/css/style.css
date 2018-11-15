@@ -45,7 +45,7 @@ nav .notifications {
     background-color: rgba(50, 50, 93, .11);
     padding-top: 25px;
     border-radius: 5px;
-    box-shadow: 0px 1px 3px 0px #8898aa;    
+    box-shadow: 0px 1px 3px 0px #8898aa;
     margin-bottom: 50px;
     margin-top: 50px;
 }
@@ -242,7 +242,7 @@ li{
 }
 
 .buttonLabel{
-    width: 100%;
+    width: 88%;
     color: white;
 }
 
