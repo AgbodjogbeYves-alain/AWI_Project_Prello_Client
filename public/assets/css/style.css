@@ -242,7 +242,7 @@ li{
 }
 
 .buttonLabel{
-    width: 88%;
+    width: 100%;
     color: white;
 }
 
@@ -284,4 +284,20 @@ li{
 }
 .progress.card-progress{
     margin-top: 10px;
+}
+
+.btnNameMember {
+    margin-top: -40%;
+    margin-left: -30%;
+}
+
+.profileInModalEdit{
+    width: fit-content;
+    margin-left: 25px;
+    margin-top: -20px;
+}
+
+.profilInCard{
+    width: fit-content;
+
 }

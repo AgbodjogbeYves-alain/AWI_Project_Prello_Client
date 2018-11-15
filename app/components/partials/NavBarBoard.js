@@ -1,5 +1,4 @@
 import React, { Component,PureComponent } from 'react';
-import Menu from "./Menu"
 import {callEditBoard} from "../../actions/BoardActions";
 import { connect } from 'react-redux';
 import { ProfilePicture } from './ProfilePicture';
@@ -11,8 +10,7 @@ class NavBarBoard extends Component {
         this.state = {
             board:{boardTeams: []},
             teamsB: ["Personal"],
-            newBoardName: '',
-            visibleMenu: false
+            newBoardName: ''
         }
 
         this.handleSubmitTitle = this.handleSubmitTitle.bind(this)
@@ -103,6 +101,9 @@ class NavBarBoard extends Component {
                     {this.renderProfilePictures()}
                 </div>
 
+                <button className={"btn btn-primary"} id={'toggleButton'} onClick={() => this.toggleMenu(true)}>
+                    <span> <i className="ni ni-settings"/>Display settings</span>
+                </button>
             </nav>
                 <div className="modal fade" id="modalChangeBN" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered" role="document">
