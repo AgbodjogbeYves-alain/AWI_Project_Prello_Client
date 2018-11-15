@@ -291,13 +291,14 @@ li{
     margin-left: -30%;
 }
 
-.profileInModalEdit{
+.userForCard{
     width: fit-content;
     margin-left: 25px;
     margin-top: -20px;
 }
 
-.profilInCard{
+.profilInCard .profile-picture{
     width: fit-content;
+    float: left
 
 }
