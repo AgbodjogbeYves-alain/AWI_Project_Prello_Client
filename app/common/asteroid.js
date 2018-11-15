@@ -9,7 +9,7 @@ import { setRefreshed } from '../actions/RefreshActions';
 const Asteroid = createClass();
 // Connect to a Meteor backend
 const asteroid = new Asteroid({
-  endpoint: 'ws://prello12s.igpolytech.fr/websocket',
+  endpoint: 'ws://localhost:9000/websocket',
 });
 
 // if you want realitme updates in all connected clients
@@ -43,7 +43,6 @@ asteroid.ddp.on('added', (doc) => {
       const docObj = Object.assign({}, doc.fields, { _id: doc.id });
       store.dispatch(addLabel(docObj));
   }
-
 
 });
 
