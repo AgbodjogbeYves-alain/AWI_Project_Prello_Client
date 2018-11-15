@@ -283,7 +283,7 @@ li{
     transition: 0.2s
 }
 .progress.card-progress{
-    margin-top: 10px;
+    margin-top: 25%;
 }
 
 .btnNameMember {
@@ -294,7 +294,15 @@ li{
 .userForCard{
     width: fit-content;
     margin-left: 25px;
-    margin-top: -20px;
+    margin-top: 5%;
+}
+
+.userForCard .profile-picture{
+    float: left;
+}
+
+.userForCard span{
+    float: left;
 }
 
 .profilInCard .profile-picture{
