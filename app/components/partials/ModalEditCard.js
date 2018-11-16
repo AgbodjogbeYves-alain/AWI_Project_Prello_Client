@@ -155,7 +155,7 @@ class ModalEditCard extends Component {
     renderUsers(){
         return this.props.users.map((user, i) => {
             if(this.props.card.cardUsers && this.props.card.cardUsers.includes(user._id)){
-                return (<div className={"profileInModalEdit"}><ProfilePicture key={i} user={user}/></div>)
+                return <ProfilePicture key={i} user={user}/>
             }
         })
     }
@@ -173,6 +173,11 @@ class ModalEditCard extends Component {
                             <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
+
+                            <div className="userForCard">
+                                <span><i className="ni ni-single-02"/></span>
+                                {this.renderUsers()}
+                            </div>
                         </div>
 
                         <div className="modal-body modalContentCard">
@@ -183,11 +188,7 @@ class ModalEditCard extends Component {
 
                             </div>
 
-                            <div className="userForCard">
-                                <span><i className="ni ni-single-02"/></span>
-                                {this.renderUsers()}
 
-                            </div>
 
                             <div className={"deadLineDiv"}>
                                 {this.renderDeadLine()}

@@ -45,7 +45,7 @@ class Card extends Component {
     renderUsers(){
         return this.props.users.map((user, i) => {
             if(this.props.card.cardUsers && this.props.card.cardUsers.includes(user._id)){
-                return (<div className={"profilInCard"}><ProfilePicture key={i} user={user}/></div>)
+                return (<ProfilePicture key={i} user={user}/>)
             }
         })
     }
@@ -61,7 +61,7 @@ class Card extends Component {
                                 data-toggle="modal" data-target={"#card-modal"+this.props.card._id}>
                         {this.props.card.cardTitle}
 
-                        {this.renderUsers()}
+                        <div className={"profilInCard"}>{this.renderUsers()}</div>
                         {this.hasChecklist() ?
                             <div className="progress card-progress">
                                 <div className="progress-bar bg-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
