@@ -37,15 +37,15 @@ class Card extends Component {
 
     renderLabels(){
         let cardLabels = this.props.labels.filter((label) => this.props.card.cardLabels.includes(label._id) );
-        return cardLabels.map((label) => {
-            return <span className="badge badge-pill badge-default" style={{background: label.labelColor}}>{label.labelName}</span>
+        return cardLabels.map((label,i) => {
+            return <span className="badge badge-pill badge-default" key={i} style={{background: label.labelColor}}>{label.labelName}</span>
         })
     }
 
     renderUsers(){
         return this.props.users.map((user, i) => {
             if(this.props.card.cardUsers && this.props.card.cardUsers.includes(user._id)){
-                return (<ProfilePicture key={i} user={user}/>)
+                return (<div className={"profilInCard"}><ProfilePicture key={i} user={user} size={"sm"}/></div>)
             }
         })
     }

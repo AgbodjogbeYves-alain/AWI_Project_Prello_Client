@@ -102,9 +102,8 @@ class ModalEditCard extends Component {
         let newCard = this.props.card
         newCard.isArchived = !this.props.card.isArchived
         callEditCard(this.state.idBoard,this.state.idList,newCard)
-        this.setState({
-            card: newCard
-        })
+        let child = document.getElementsByClassName("modal-backdrop fade show")[0]
+        child.parentNode.removeChild(child);
     }
 
     renderDeadLine(){
@@ -155,7 +154,7 @@ class ModalEditCard extends Component {
     renderUsers(){
         return this.props.users.map((user, i) => {
             if(this.props.card.cardUsers && this.props.card.cardUsers.includes(user._id)){
-                return <ProfilePicture key={i} user={user}/>
+                return (<div className={"profileInModalEdit"}><ProfilePicture key={i} user={user} size={"sm"}/></div>)
             }
         })
     }
@@ -238,7 +237,7 @@ class ModalEditCard extends Component {
                                             <div id={"listComment"}>
                                                 <span> Comment list </span>
                                                 {this.props.card.cardComments.map((comment) => {
-                                                    return <div><span><i className="ni ni-chat-round"/>{"  " + comment.commentContent}</span></div>
+                                                    return <div className={"divComment"}><span><i className="ni ni-chat-round"/>{"  " + comment.commentContent}</span></div>
 
                                                 })
                                                 }
@@ -247,10 +246,6 @@ class ModalEditCard extends Component {
                                         </div>
                                     </div>
                                 </form>
-                                <div id={'cardactivitydiv'}>
-                                    <span> Activity </span>
-
-                                </div>
                             </div>
                             <div className={'cardactiondiv'}>
                                 <span> Action </span>
