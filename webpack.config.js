@@ -16,7 +16,7 @@ module.exports = {
     pathinfo: true,
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js',
-    publicPath: 'http://prello12c.igpolytech.fr/'
+    publicPath: 'https://prello12c.igpolytech.fr/'
   },
   plugins: [
     new HtmlWebpackPlugin({
