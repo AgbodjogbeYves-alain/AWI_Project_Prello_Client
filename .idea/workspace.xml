@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1dfcfd3-1329-4dff-b207-cab962d03c00" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/actions/BoardActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/actions/BoardActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/asteroid.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/common/asteroid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/Board/BoardDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/Board/BoardDisplay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/Board/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/Board/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/Board/CheckListDropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/Board/CheckListDropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/Board/Checklist.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/Board/Checklist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/Board/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/Board/Item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/Board/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/Board/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/Dashboard/Boards/Board/Board.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/Dashboard/Boards/Board/Board.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/Dashboard/Boards/ImportModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/Dashboard/Boards/ImportModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/Dashboard/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/Dashboard/Teams/Teams.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/Dashboard/Teams/Teams.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/LogIn/LogIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/LogIn/LogIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/SignUp/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/SignUp/SignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/partials/BoardModal/BoardModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/partials/BoardModal/BoardModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/partials/ModalEditCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/partials/ModalEditCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/partials/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/partials/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/reducers/mainReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/reducers/mainReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/partials.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/partials.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/nouislider/js/nouislider.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/vendor/nouislider/js/nouislider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-    </list>
+    <list default="true" id="b1dfcfd3-1329-4dff-b207-cab962d03c00" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -119,7 +92,7 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="272">
               <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
@@ -356,16 +329,15 @@
       <workItem from="1542471989819" duration="2763000" />
       <workItem from="1542501269132" duration="4346000" />
       <workItem from="1542515632194" duration="99000" />
-      <workItem from="1542574087053" duration="697000" />
+      <workItem from="1542574087053" duration="948000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60770000" />
+    <option name="totallyTimeSpent" value="61021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5009914" side_tool="true" weight="0.32885906" />
@@ -373,8 +345,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4990086" visible="true" weight="0.3281046" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24934895" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4990086" visible="true" weight="0.3281046" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24934895" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -631,7 +603,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="272">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
