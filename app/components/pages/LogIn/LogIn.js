@@ -81,6 +81,7 @@ class LogIn extends Component {
         }
 
         const key = process.env.KEYAPI
+        console.log(key)
 
         const { user } = this.props;
         if(user) return(<Redirect to='/dashboard'/>)
