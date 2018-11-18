@@ -9,7 +9,7 @@ import { addChecklist, editChecklist, removeChecklist } from '../actions/Checkli
 const Asteroid = createClass();
 // Connect to a Meteor backend
 const asteroid = new Asteroid({
-  endpoint: 'wss://prello12s.igpolytech.fr/websocket',
+  endpoint: 'ws://localhost:9000/websocket',
 });
 
 // if you want realitme updates in all connected clients
