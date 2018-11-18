@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1dfcfd3-1329-4dff-b207-cab962d03c00" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/LogIn/LogIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/LogIn/LogIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-    </list>
+    <list default="true" id="b1dfcfd3-1329-4dff-b207-cab962d03c00" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -81,7 +77,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -90,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/components/pages/LogIn/LogIn.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+            <state relative-caret-position="221">
+              <caret line="82" column="94" selection-start-line="82" selection-start-column="94" selection-end-line="82" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -336,31 +332,6 @@
               <item name="partials" type="462c0819:PsiDirectoryNode" />
               <item name="SuggestionsUtils" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="AWI_Project_Prello_Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AWI_Project_Prello_Client" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AWI_Project_Prello_Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AWI_Project_Prello_Client" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AWI_Project_Prello_Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AWI_Project_Prello_Client" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AWI_Project_Prello_Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AWI_Project_Prello_Client" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -414,12 +385,12 @@
       <workItem from="1542353768828" duration="5982000" />
       <workItem from="1542403902294" duration="2395000" />
       <workItem from="1542471989819" duration="2763000" />
-      <workItem from="1542501269132" duration="150000" />
+      <workItem from="1542501269132" duration="1014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55778000" />
+    <option name="totallyTimeSpent" value="56642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
@@ -619,17 +590,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/pages/LogIn/LogIn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/pages/LogIn/LogIn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="82" column="94" selection-start-line="82" selection-start-column="94" selection-end-line="82" selection-end-column="94" />
         </state>
       </provider>
     </entry>
