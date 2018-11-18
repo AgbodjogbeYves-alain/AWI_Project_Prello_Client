@@ -9,7 +9,7 @@ import { addChecklist, editChecklist, removeChecklist } from '../actions/Checkli
 const Asteroid = createClass();
 // Connect to a Meteor backend
 const asteroid = new Asteroid({
-  endpoint: 'ws://localhost:9000/websocket',
+  endpoint: 'wss://prello12s.igpolytech.fr/websocket',
 });
 
 // if you want realitme updates in all connected clients
@@ -24,7 +24,7 @@ asteroid.subscribe('checklists');
 asteroid.ddp.on('added', (doc) => {
   // we need proper document object format here
   const docObj = Object.assign({}, doc.fields, { _id: doc.id });
-  
+
   switch(doc.collection){
     case "users":
       if(docObj.services) store.dispatch(setLoggedUser(docObj));
@@ -41,7 +41,7 @@ asteroid.ddp.on('added', (doc) => {
       break;
     case 'checklists':
       store.dispatch(addChecklist(docObj));
-      break;  
+      break;
   }
 });
 
