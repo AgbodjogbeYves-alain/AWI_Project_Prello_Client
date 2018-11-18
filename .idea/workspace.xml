@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1dfcfd3-1329-4dff-b207-cab962d03c00" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/head.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/head.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -137,11 +136,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package-lock.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package-lock.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package-lock.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="4167" column="66" selection-start-line="4167" selection-start-column="66" selection-end-line="4167" selection-end-column="66" />
+            <state relative-caret-position="328">
+              <caret line="4176" column="25" lean-forward="true" selection-start-line="4176" selection-start-column="25" selection-end-line="4176" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/head.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="172" selection-start-line="9" selection-start-column="172" selection-end-line="9" selection-end-column="172" />
             </state>
           </provider>
         </entry>
@@ -220,7 +228,6 @@
         <option value="$PROJECT_DIR$/app/components/partials/BoardModal/BoardModal.js" />
         <option value="$PROJECT_DIR$/app/components/pages/Dashboard/Teams/Teams.js" />
         <option value="$PROJECT_DIR$/public/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/head.ejs" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/webpack.prod.conf.js" />
         <option value="$PROJECT_DIR$/Dockerfile" />
@@ -230,6 +237,7 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/public/assets/css/partials.css" />
         <option value="$PROJECT_DIR$/package-lock.json" />
+        <option value="$PROJECT_DIR$/head.ejs" />
       </list>
     </option>
   </component>
@@ -359,12 +367,12 @@
       <workItem from="1542501269132" duration="4346000" />
       <workItem from="1542515632194" duration="99000" />
       <workItem from="1542574087053" duration="3015000" />
-      <workItem from="1542577737808" duration="628000" />
+      <workItem from="1542577737808" duration="947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63716000" />
+    <option name="totallyTimeSpent" value="64035000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
@@ -376,8 +384,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49731544" visible="true" weight="0.32749325" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25704697" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49731544" visible="true" weight="0.32749325" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25704697" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -578,13 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/head.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/UserActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -693,8 +694,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="4167" column="66" selection-start-line="4167" selection-start-column="66" selection-end-line="4167" selection-end-column="66" />
+        <state relative-caret-position="328">
+          <caret line="4176" column="25" lean-forward="true" selection-start-line="4176" selection-start-column="25" selection-end-line="4176" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/head.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="172" selection-start-line="9" selection-start-column="172" selection-end-line="9" selection-end-column="172" />
         </state>
       </provider>
     </entry>
