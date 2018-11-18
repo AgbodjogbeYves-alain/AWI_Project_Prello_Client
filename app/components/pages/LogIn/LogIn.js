@@ -80,8 +80,7 @@ class LogIn extends Component {
             alert("An error occured !! Please try again!! ")
         }
 
-        const key = process.env.REACT_APP_KEYAPI
-        console.log(process.env.REACT_APP_KEYAPI)
+        const key = "909976969961-r4v6ls5qbgjvslotg7trcb066vig4cb8.apps.googleusercontent.com"
 
         const { user } = this.props;
         if(user) return(<Redirect to='/dashboard'/>)

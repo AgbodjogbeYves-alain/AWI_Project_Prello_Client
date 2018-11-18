@@ -9,6 +9,5 @@ RUN npm install webpack
 # Build the app
 RUN npm run build
 ENV PORT=3000
-ENV REACT_APP_KEYAPI="909976969961-r4v6ls5qbgjvslotg7trcb066vig4cb8.apps.googleusercontent.com"
 EXPOSE 3000
 CMD [ "node", "/home/client/server.js" ]
