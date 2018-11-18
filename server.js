@@ -14,7 +14,6 @@ if (process.env.NODE_ENV == 'production') {
   app.set('port', process.env.PORT || 3000);
   app.listen(app.get('port'), () => {
     const port = process.env.PORT;
-    console.log(process.env.KEYAPI);
     console.log(`listening on port ${port}`);
   });
 } else {

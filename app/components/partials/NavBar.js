@@ -7,6 +7,7 @@ import asteroid from '../../common/asteroid';
 import { resetBoards } from '../../actions/BoardActions';
 import { resetTeams } from '../../actions/TeamActions';
 import { resetUsers } from '../../actions/UserActions';
+import { resetChecklists } from '../../actions/ChecklistActions';
 
 class NavBar extends Component {
 
@@ -17,6 +18,7 @@ class NavBar extends Component {
             this.props.dispatchResetBoards();
             this.props.dispatchResetTeams();
             this.props.dispatchResetUsers();
+            this.props.dispatchResetChecklists();
         });
     }
 
@@ -38,6 +40,13 @@ class NavBar extends Component {
                             <span className="badge badge-danger">4</span>
                             <span className="nav-link-inner--text d-lg-none">Notifications</span>
                         </a>
+                    </li>
+
+                    <li>
+                        <Link to={"/statistics"} className="nav-link" href='#' >
+                            <i className="ni ni-chart-pie-35 ni-lg"></i>
+                            <span className="nav-link-inner--text d-lg-none">Accueil</span>
+                        </Link>
                     </li>
 
                     <li className="nav-item dropdown">
@@ -128,7 +137,8 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
     dispatchResetBoards: () => dispatch(resetBoards()),
     dispatchResetTeams: () => dispatch(resetTeams()),
-    dispatchResetUsers: () => dispatch(resetUsers())
+    dispatchResetUsers: () => dispatch(resetUsers()),
+    dispatchResetChecklists: () => dispatch(resetChecklists())
   });
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(NavBar));
