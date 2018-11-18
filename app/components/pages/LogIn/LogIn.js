@@ -80,8 +80,8 @@ class LogIn extends Component {
             alert("An error occured !! Please try again!! ")
         }
 
-        const key = process.env.REACT_APP_APIKEY
-        console.log(process.env.REACT_APP_APIKEY)
+        const key = process.env.REACT_APP_KEYAPI
+        console.log(process.env.REACT_APP_KEYAPI)
 
         const { user } = this.props;
         if(user) return(<Redirect to='/dashboard'/>)
