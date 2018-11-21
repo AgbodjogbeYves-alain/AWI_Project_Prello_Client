@@ -30,9 +30,9 @@ class MyAccount extends Component {
         return (
             <main className="profile-page">
             <NavBar/>
-            <ConfirmModal 
+            <ConfirmModal
                 id={'removeModal'}
-                text={"All your account will be removed. Are you sure ?"} 
+                text={"All your account will be removed. Are you sure ?"}
                 confirmAction={this.removeAccount}
                 parent={this}
             />
@@ -66,15 +66,15 @@ class MyAccount extends Component {
                                     </div>
                                     <div className="col-lg-4 order-lg-3 ">
                                         <div className="card-profile-actions py-4 mt-lg-0 text-right">
-                                            <button 
-                                                className="btn btn-warning btn-sm" 
-                                                data-toggle="modal" 
+                                            <button
+                                                className="btn btn-warning btn-sm"
+                                                data-toggle="modal"
                                                 data-target="#removeModal">
                                                 Remove account
                                             </button>
                                         </div>
                                         <div className="card-profile-actions py-4 mt-lg-0 text-right">
-                                            <LinkTrelloButton trelloToken={this.props.user.profile.trelloToken} />
+                                            <LinkTrelloButton trelloToken={this.props.user.profile.trelloToken || ""} />
                                         </div>
                                     </div>
                                     <div className="col-lg-4 order-lg-1">

@@ -93,8 +93,8 @@ nav {
 }
 
 #divList{
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-x: auto;
+    overflow-y: auto;
     float: left;
     width: 100%;
     padding-top: 1%;
@@ -314,6 +314,12 @@ li{
 
 .buttonLabel{
     width: 88%
+}
+
+@media (max-width: 1000px) {
+    .navBarBoard {
+        display: none;
+    }
 }
 
 
