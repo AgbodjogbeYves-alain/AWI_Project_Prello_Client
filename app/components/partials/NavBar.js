@@ -112,7 +112,7 @@ class NavBar extends Component {
                         <div className="row">
                         <div className="col-6 collapse-brand">
                             <Link to={user ? "/dashboard" : "/"}>
-                                <img src="https://rawcdn.githack.com/AgbodjogbeYves-alain/AWI_Assets/7cf53ef40e7e2346c164640109b845b599cbe915/img/brand/blue.png"/>
+                                <img src="https://rawcdn.githack.com/AgbodjogbeYves-alain/AWI_Project_Prello_Client/43060025bc13f771d321af5c5535f5fd05c0dfc9/public/assets/img/brand/blue.png"/>
                             </Link>
                         </div>
                         <div className="col-6 collapse-close">
